@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Doble CVE Database</h1>
+  <p>This is the Dashboard draft designed by <em>WPI GQP_2020_Doble Group</em>!</p>
+  <p>Group Member: <em>Mengzhi Cao and his friends</em> </p>
+
+  <p>Our Plan:</p>
+  <div>
+    {% load static %}
+    <img src="../static/images/OverviewPlan.png" alt="PlanPic"  style="width: 1080px;"/>
+    </div>     
+  <h2>Dynamic content</h2>
+  <p>The database has the following record counts:</p>
+  <ul>
+    <li><strong>Products:</strong> {{ num_products }}</li>
+    <li><strong>Vendors:</strong> {{ num_Vendors }}</li>
+    <li><strong>CVE records:</strong> {{ num_Cve }}</li>
+  </ul>
+{% endblock %}
